@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>yolol</title>
+    <style>
+      html,
+      body {
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #ffffff;
+        pointer-events: none;
+      }
+    </style>
+    <script>
+      document.oncontextmenu = function () {
+        return false;
+      };
+      function stopDefAction(evt) {
+        evt.preventDefault();
+        return;
+      }
+      document.addEventListener("click", stopDefAction, false);
+    </script>
+  </head>
+  <body>
+    Time to get yolol'ed!
+  </body>
+</html>
